@@ -22,6 +22,8 @@ app.post('/todos', (req, res) => {
     res.send(doc);
   }, (e) => {
     res.status(400).send(e)
+  }).catch((e) => {
+    console.log(e)
   });
 });
 
@@ -30,8 +32,10 @@ app.get('/todos',(req,res) => {
     res.send({todos})
   },(e) => {
     res.status(400).send(e);
-  })
-})
+  }).catch((e) => {
+    console.log(e);
+  });
+});
 
 app.get('/todos/:id', (req,res) => {
   var id = req.params.id;
@@ -59,4 +63,4 @@ app.listen(port, () => {
   console.log(`Started ${port}`);
 })
 
-module.exports = {app};
+//module.exports = {app};
