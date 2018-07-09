@@ -3,7 +3,7 @@ const {MongoClient, ObjectID} = require('mongodb');
 
 
 
-MongoClient.connect('mongodb://vasumehra:vasu@123@ds131711.mlab.com:31711/node-todo-api' || 'mongodb://localhost:27017/TodoApp', (err, db) => {
+MongoClient.connect('mongodb://vasumehra:vasu123@ds131711.mlab.com:31711/node-todo-api' || 'mongodb://localhost:27017/TodoApp', (err, db) => {
   if(err) {
     return console.log('Unable to connect MongoDB server');
   }
