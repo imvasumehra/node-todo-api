@@ -24,11 +24,11 @@ MongoClient.connect('mongodb://vasumehra:vasu@123@ds131711.mlab.com:31711/node-t
  // }), (err) => {
  //   console.log('Not connected');
  // };
- db.collection('Users').find({name: 'Vasu'}).toArray().then((docs) =>{
-   console.log(JSON.stringify(docs, undefined, 2));
- }), (err) => {
-   console.log('Not connected');
- };
+ // db.collection('Users').find({name: 'Vasu'}).toArray().then((docs) =>{
+ //   console.log(JSON.stringify(docs, undefined, 2));
+ // }), (err) => {
+ //   console.log('Not connected');
+ // };
 
   //db.close();
 });

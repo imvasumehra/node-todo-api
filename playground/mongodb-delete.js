@@ -18,13 +18,13 @@ MongoClient.connect('mongodb://vasumehra:vasu@123@ds131711.mlab.com:31711/node-t
 // })
 
 //FindOneandD('elete
-db.collection('Users').deleteMany({name: 'Vasu'}).then((result) =>{
-  console.log("yeah!!!")
-});
-
- db.collection('Users').deleteOne({name: 'Udit'}).then((result) =>{
-   console.log("yeah!!!")
-});
+// db.collection('Users').deleteMany({name: 'Vasu'}).then((result) =>{
+//   console.log("yeah!!!")
+// });
+//
+//  db.collection('Users').deleteOne({name: 'Udit'}).then((result) =>{
+//    console.log("yeah!!!")
+// });
 
 
   //db.close();

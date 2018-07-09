@@ -20,19 +20,19 @@ MongoClient.connect('mongodb://vasumehra:vasu@123@ds131711.mlab.com:31711/node-t
 // }
 // )
 
-db.collection('Todos').findOneAndUpdate({
-  text: 'Something'
-}, {
-  $set: {
-    text: 'Vasu'
-  }, $inc: {
-    age: 1
-  }
-}, {
-    returnOriginal: false
-
-}).then((result) => {
-  console.log(result);
-})
+// db.collection('Todos').findOneAndUpdate({
+//   text: 'Something'
+// }, {
+//   $set: {
+//     text: 'Vasu'
+//   }, $inc: {
+//     age: 1
+//   }
+// }, {
+//     returnOriginal: false
+//
+// }).then((result) => {
+//   console.log(result);
+// })
   //db.close();
 });
